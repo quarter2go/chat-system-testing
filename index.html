@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuori</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="addBtn">+</button>
+
+  <div class="card">
+
+    <h1 id="name">No Profiles Yet</h1>
+
+    <h3 id="major"></h3>
+
+    <p id="about"></p>
+
+    <p id="looking"></p>
+
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn">◀</button>
+    <button id="nextBtn">▶</button>
+  </div>
+
+  <div id="modal" class="modal hidden">
+
+    <div class="modal-content">
+
+      <h2>Create / Update Profile</h2>
+
+      <input id="nameInput" placeholder="Name">
+
+      <input id="majorInput" placeholder="Major">
+
+      <textarea
+        id="aboutInput"
+        placeholder="About Me"
+      ></textarea>
+
+      <textarea
+        id="lookingInput"
+        placeholder="Looking For"
+      ></textarea>
+
+      <button id="publishBtn">
+        Publish
+      </button>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
