@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,27 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <button id="addBtn">+</button>
+<button id="addBtn">+</button>
 
   <div class="card">
 
-    <h1 id="name">No Profiles Yet</h1>
+```
+<img
+  id="profileImage"
+  src=""
+  alt="Profile Picture">
 
-    <h3 id="major"></h3>
+<h1 id="name">No Profiles Yet</h1>
 
-    <p id="about"></p>
+<h3 id="major"></h3>
 
-    <p id="looking"></p>
+<p id="about"></p>
+
+<p id="looking"></p>
+```
 
   </div>
 
@@ -30,29 +39,40 @@
 
   <div id="modal" class="modal hidden">
 
-    <div class="modal-content">
+```
+<div class="modal-content">
 
-      <h2>Create / Update Profile</h2>
+  <h2>Create / Update Profile</h2>
 
-      <input id="nameInput" placeholder="Name">
+  <input
+    id="nameInput"
+    placeholder="Name">
 
-      <input id="majorInput" placeholder="Major">
+  <input
+    id="majorInput"
+    placeholder="Major">
 
-      <textarea
-        id="aboutInput"
-        placeholder="About Me"
-      ></textarea>
+  <input
+    type="file"
+    id="imageInput"
+    accept="image/*">
 
-      <textarea
-        id="lookingInput"
-        placeholder="Looking For"
-      ></textarea>
+  <textarea
+    id="aboutInput"
+    placeholder="About Me">
+  </textarea>
 
-      <button id="publishBtn">
-        Publish
-      </button>
+  <textarea
+    id="lookingInput"
+    placeholder="Looking For">
+  </textarea>
 
-    </div>
+  <button id="publishBtn">
+    Publish
+  </button>
+
+</div>
+```
 
   </div>
 
